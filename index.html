@@ -1,26 +1,81 @@
 <html>
-    <head>
-        <style>
-            .main{
-                background-color: #000000;
-            }
-            .container{
-                height:100vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .title{
-                font-size: 32px;
-                font-weight: 700;
-                color: #ffffff;
-            }
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
+  <style>
+    .main {
+      background-color: #000000;
+      font-family: 'Lato', 'sans-serif';
+    }
 
-        </style>
-    </head>
-    <body class="main">
-        <div class="container">
-            <h1 class="title">Coming Soon...</h1>
-        </div>
-    </body>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url('https://images.unsplash.com/photo-1453901593090-e57bfb58f39b?ixlib=rb-4.0.3');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+    .overlay{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(255,255,255,0.5);
+      border-radius: 12px;
+      padding: 20px 40px;
+    }
+    .title{
+      font-size: 42px;
+      font-weight: 700;
+    }
+    .subtitle{
+      margin-top: -20px;
+      font-size: 24px;
+      font-weight: 400;
+    }
+    .youtube{
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;
+      background-color: #DBFF00;
+    }
+    .navbar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-cotent: center;
+      height: 72px;
+      background-color: rgba(255,255,255,0.4);
+    }
+    #navtitle{
+      font-size: 24px;
+      margin-left: 32px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+   
+    
+  </style>
+</head>
+
+<body class="main">
+  <div class="navbar">
+      <p id="navtitle">Hiten Saxena</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="overlay">
+      <p class="title">Off Road Biking Adventure</p>
+      <p class="subtitle">Conquer The Wild, Ride The Thrill</p>
+      <button class="youtube" href="https://www.youtube.com/channel/UCaJwVntYs69ONz8bPsrSU5w">Watch Videos</buttton>
+    </div>
+  </div>
+</body>
+
 </html>
